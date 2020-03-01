@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  gephi:
+    build: ./
+    environment: 
+        - DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./data:/root/data
